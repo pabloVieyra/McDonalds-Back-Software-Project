@@ -1,11 +1,9 @@
 import express from "express";
-
+import apiController from "./api";
 const routes = () => {
   const router = express.Router();
 
-  router.get("/", (req, res) => {
-    res.send("Hola");
-  });
+  router.use("/api", apiController());
 
   return router;
 };
