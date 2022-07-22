@@ -11,7 +11,7 @@ import specs from "./utils/swagger";
 dotenv.config();
 
 const app = express();
-const port = 4000;
+const port = 4000 || process.env.PORT;
 app.use(cors());
 app.use(express.json());
 connectDb();

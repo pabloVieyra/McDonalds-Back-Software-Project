@@ -6,7 +6,8 @@
   "scripts": {
     "prod:build": "webpack --config webpack.config.js --mode production",
     "dev:build": "webpack --watch --config webpack.config.js --mode development",
-    "dev": "nodemon ./dist"
+    "dev": "nodemon ./dist",
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "",
